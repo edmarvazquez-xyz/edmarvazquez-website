@@ -27,17 +27,22 @@ body{
     padding:40px;
 }
 
-main{
+main {
+    max-width: 520px;
+    width: 100%;
 
-    max-width:700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
 }
 
-h1{
-
-    font-size:4rem;
-    font-weight:900;
-
-    margin-bottom:1rem;
+h1 {
+    font-size: clamp(3rem, 8vw, 5rem);
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 2rem;
 }
 
 p{
@@ -45,29 +50,22 @@ p{
     margin-bottom:2rem;
 }
 
-nav{
-
-    display:flex;
-    gap:30px;
-    flex-wrap:wrap;
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
-a{
-
-    color:#000;
-
-    text-decoration:none;
-
-    font-weight:700;
-
-    border-bottom:2px solid transparent;
-
-    transition:.2s;
+a {
+    color: #111;
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity .2s ease;
 }
 
-a:hover{
-
-    border-color:#000;
+a:hover {
+    opacity: .45;
 }
 
 .page {
