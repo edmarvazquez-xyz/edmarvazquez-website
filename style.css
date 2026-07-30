@@ -39,10 +39,11 @@ main {
 }
 
 h1 {
-    font-size: clamp(3rem, 8vw, 5rem);
-    font-weight: 900;
+    font-size: clamp(3rem, 6vw, 4.5rem);
+    font-weight: 800;
     letter-spacing: -0.05em;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
+    white-space: nowrap;
 }
 
 p{
@@ -52,20 +53,23 @@ p{
 
 nav {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 3rem;
+    margin-top: 1rem;
 }
 
-a {
+nav a {
     color: #111;
     text-decoration: none;
     font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
     transition: opacity .2s ease;
 }
 
-a:hover {
-    opacity: .45;
+nav a:hover {
+    opacity: 0.45;
 }
 
 .page {
